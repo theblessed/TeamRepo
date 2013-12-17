@@ -30,7 +30,7 @@ namespace GridImplementation.Components
 
         public JGridPagedResult<GridProperties> GetPersons(string sidx, string sord, int page, int rows)
         {
-            Thread.Sleep(500);
+            Thread.Sleep(3000);
             //Query to get all persons.
             IQueryable<GridProperties> objPerson = GetAll().AsQueryable();
 

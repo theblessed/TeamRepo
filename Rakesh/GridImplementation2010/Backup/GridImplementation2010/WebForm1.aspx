@@ -12,7 +12,6 @@
         $(function () {
             $("#divGrid").jGrid({
                 url: '/Service1.svc/GetPersons',
-                dataType: 'json',
                 columns: [
                     { title: "First Name", index: "FirstName", width: '20' },
                     { title: "Last Name", index: "LastName", width: '20' },
@@ -31,13 +30,12 @@
         });
 
         function editLink(rowValue) {
-            return '<a href="Javascript:alert(\'Add your custom function.\');">Edit</a>';
+            return '<a href="#">Edit</a>';
         }
 
         function deleteLink(rowValue) {
-            return '<a href="Javascript:alert(\'Add your custom function.\');">Delete</a>';
+            return '<a href="#">Delete</a>';
         }
-        
     </script>
 </head>
 <body>

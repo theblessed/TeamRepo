@@ -1,0 +1,122 @@
+﻿body {
+}
+/*------Table------*/
+div.divTable 
+{
+    display:table; 
+    position:relative;
+    border: 1px solid green;
+}
+
+div.divTable div.divRow 
+{
+    display:table-row;
+    width:100%; 
+    border-collapse:collapse;
+}
+
+div.divTable div.divRow div.divCell 
+{
+    display: table-cell;
+    vertical-align:middle;
+    padding:4px;
+}
+
+/*------Table body------*/
+div.divBody div.divRow:nth-child(2n)
+{
+    background-color: #f0f9f2;
+}
+
+div.divBody div.divRow:hover
+{
+    background-color: #fefee1;
+}
+
+/*------Table Header------*/
+div.hdiv {
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -khtml-border-radius: 10px 10px 0 0;
+}
+
+div.hdiv div.divRow div.divCell:not(:last-child) 
+{
+    border-right: 1px solid #4ab161;
+}
+
+div.hdiv .sortable {
+    cursor: pointer;
+}
+
+div.hdiv span.disabled {
+    color: #4ab161;
+}
+
+/*------Table bottom------*/
+div.bdiv {
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -khtml-border-radius: 0 0 10px 10px;
+}
+
+div.bdiv a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+} 
+
+div.bdiv a.disabled {
+    color: #4ab161;
+    cursor: default;
+} 
+
+div.bdiv input[type=text], div.bdiv select
+{
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+/*------Overlay and Loading------*/
+.overlay {
+    position: absolute;
+    z-index: 10;
+    background-color: #cccccc;
+    opacity:0.2;
+    filter:alpha(opacity=20);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+
+.loading 
+{
+    width: 60px;
+    height: 20px;
+    padding: 4px;
+    border: 3px outset green;
+    background-color:White;
+    color: Green;
+    position: absolute;
+    z-index: 10;
+    background-color: #f0f9f2;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+}
+
+
+

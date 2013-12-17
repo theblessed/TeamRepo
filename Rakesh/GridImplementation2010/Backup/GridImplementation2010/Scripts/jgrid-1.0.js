@@ -14,8 +14,7 @@
             width: element.width(),
             sortName: '',
             sortOrder: 'asc',
-            pageSizes: [],
-            dataType: 'json'
+            pageSizes: []
         }, options);
 
         var strHtml = '';
@@ -217,7 +216,7 @@
         var load = function () {
             $.ajax({
                 url: settings.url + '?sidx=' + settings.sortName + '&sord=' + settings.sortOrder + '&page=' + settings.pageIndex + '&rows=' + settings.rows,
-                dataType: settings.dataType,
+                dataType: "json",
                 type: "get",
                 cache: false,
                 contentType: "application/json; charset=utf-8",
