@@ -1,6 +1,6 @@
 /*!
  * Shitty Internet Explorer detection code
- * http://desigeek.com/
+ * http://desigeek.in/
  *
  * Copyright Zeeshan Ali
  *
